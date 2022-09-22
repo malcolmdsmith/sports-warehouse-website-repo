@@ -1,0 +1,136 @@
+/* MENU STYLING */
+#menu {
+  display: none;
+}
+
+/* Show menu when it has a "show" class applied to it */
+#menu.show {
+  display: flex; /* display: block; */
+}
+
+@media only screen and (min-width: 600px) {
+  /* Hide menu toggle on desktop */
+  #menu-toggle {
+    /* display: none; */
+  }
+
+  /* Show menu on desktop */
+  #menu {
+    display: flex; /* display: block; */
+  }
+}
+
+/*
+  "no-js" styling for when JavaScript is NOT running in the browser
+  Hide the menu toggle and show the menu
+*/
+
+.no-js #menu-toggle {
+  display: none;
+}
+
+.no-js #menu {
+  display: flex;
+}
+
+/*  OPTIONAL STYLING   */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14pt;
+}
+
+.site-wrapper {
+  max-width: 1000px;
+}
+
+header {
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #00aced;
+}
+
+.view-cart {
+  margin-right: 0.5em;
+}
+
+.view-cart__link {
+  cursor: pointer;
+}
+
+.view-cart__text {
+  margin-left: 0.6em;
+}
+
+.view-cart__items {
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 13pt;
+  background-color: #0092ca;
+}
+
+.menu__toggle {
+  margin-left: 0.3em;
+  padding: 0.4em 0.8em;
+  border: none;
+  font-size: 14pt;
+  background-color: #00aced;
+  color: #fff;
+}
+
+.menu__items {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  display: flex;
+  width: 100%;
+  padding: 0 2em 4em 0;
+  flex-direction: column;
+  background-color: #00aced;
+  list-style: none;
+}
+
+.menu__item,
+.menu__item-login {
+  margin: 0.4em 0 0.4em 2.6em;
+  color: #fff;
+}
+
+.menu__link {
+  margin-left: 1em;
+}
+
+.menu__divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 0.6em;
+  background-color: #6ed2f7;
+}
+
+.slideshow {
+  display: none;
+}
+
+.product-category-menu {
+  display: none;
+}
+
+#sw-logo {
+  max-width: 90%;
+  height: auto;
+  margin: 1em 1em 1em 1em;
+}
