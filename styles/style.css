@@ -95,6 +95,7 @@ a {
 
 .menu {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
