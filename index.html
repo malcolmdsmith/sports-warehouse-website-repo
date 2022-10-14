@@ -30,6 +30,7 @@
     <script defer src="./scripts/app.js"></script>
   </head>
   <body>
+    <div class="menu-bar"></div>
     <div class="site-wrapper">
       <header>
         <nav class="menu">
@@ -38,7 +39,9 @@
             id="menu-toggle"
             aria-label="Show/hide menu"
           >
-            <span aria-hidden="true">☰</span>
+            <span aria-hidden="true" class="menu-icon"
+              ><i class="fas fa-bars"></i
+            ></span>
             &nbsp;Menu
           </button>
           <ul class="menu__items" id="menu">
@@ -67,7 +70,7 @@
               <a class="menu__link" href="#">View Products</a>
               <div class="menu__divider"></div>
             </li>
-            <li class="menu__item">
+            <li class="menu__item sr-only">
               <i class="far fa-circle"></i>
               <a class="menu__link" href="#">Privacy Policy</a>
               <div class="menu__divider"></div>
@@ -84,6 +87,7 @@
         </nav>
         <div class="logo-container">
           <div class="logo">
+            <h1 class="sr-only">Sports Warehouse</h1>
             <svg
               id="sw-logo"
               data-name="Sports Warehouse logo"
@@ -189,21 +193,43 @@
         </div>
       </header>
       <div class="slideshow">
-        <img
-          src="./assets/images/slideshow-image-1.png"
-          alt="sports balls"
-          width="849"
-          height="300"
-        />
+        <div class="slideshow___photoframe">
+          <img
+            src="./assets/images/slideshow-image-1.png"
+            alt="sports balls"
+            width="849"
+            height="300"
+          />
+          <div class="slideshow__indicators">
+            <img
+              src="./assets/images/indicator-active.png"
+              alt=""
+              width="14"
+              height="14"
+            />
+            <img
+              src="./assets/images/indicator.png"
+              alt=""
+              width="14"
+              height="14"
+            />
+            <img
+              src="./assets/images/indicator.png"
+              alt=""
+              width="14"
+              height="14"
+            />
+          </div>
+        </div>
         <div class="slideshow__overlay">
-          <h4>View our brand new range of</h4>
-          <h1>Sports balls</h1>
+          <p>View our brand new range of</p>
+          <p>Sports balls</p>
           <a class="slideshow__shopnow" href="#">Shop now</a>
         </div>
       </div>
       <main>
         <section class="featured-products">
-          <h3>Featured Products</h3>
+          <h2>Featured Products</h2>
           <ul class="featured-products__items">
             <li class="featured-products__item">
               <a class="featured-products__link" href="#">
@@ -225,9 +251,9 @@
                       >
                     </div>
                   </div>
-                  <div class="product__description">
+                  <h3 class="product__description">
                     addidas Euro16 Top Soccer Ball
-                  </div>
+                  </h3>
                 </article>
               </a>
             </li>
@@ -243,9 +269,9 @@
                     />
                   </div>
                   <div class="product__price">$70.00</div>
-                  <div class="product__description">
+                  <h3 class="product__description">
                     Pro-tec Classic Skate Helmet
-                  </div>
+                  </h3>
                 </article>
               </a>
             </li>
@@ -269,9 +295,9 @@
                       >
                     </div>
                   </div>
-                  <div class="product__description">
+                  <h3 class="product__description">
                     Nike Sport 600ml Water Bottle
-                  </div>
+                  </h3>
                 </article>
               </a>
             </li>
@@ -287,9 +313,9 @@
                     />
                   </div>
                   <div class="product__price">$79.95</div>
-                  <div class="product__description">
+                  <h3 class="product__description">
                     Sting ArmaPlus Boxing Gloves
-                  </div>
+                  </h3>
                 </article>
               </a>
             </li>
@@ -305,16 +331,16 @@
                     />
                   </div>
                   <div class="product__price">$160.00</div>
-                  <div class="product__description">
+                  <h3 class="product__description">
                     Asics Gel Lethal Tigreor 8 IT Men's FG Boots
-                  </div>
+                  </h3>
                 </article>
               </a>
             </li>
           </ul>
         </section>
         <section class="brands">
-          <h3>Our brands and partnerships</h3>
+          <h2>Our brands and partnerships</h2>
           <div class="brands__container">
             <div class="brands__description">
               <p>These are some of our top brands and partnerships.</p>
@@ -385,9 +411,11 @@
           </div>
         </section>
       </main>
-      <div class="footer-nav-category-nav-contact">
+    </div>
+    <div class="footer-nav-category-nav-contact">
+      <div class="footer-nav-category-nav-contact__container">
         <section class="footer-nav">
-          <h2>Site navigation</h2>
+          <h3>Site navigation</h3>
           <ul class="footer-nav__items">
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Home</a>
@@ -407,7 +435,7 @@
           </ul>
         </section>
         <section class="category-nav">
-          <h2>Product Categories</h2>
+          <h3>Product Categories</h3>
           <ul class="category-nav__items">
             <li class="category-nav__item">
               <a class="category-nav__link" href="#">Shoes</a>
@@ -433,7 +461,7 @@
           </ul>
         </section>
         <section class="contact">
-          <h2>Contact Sports Warehouse</h2>
+          <h3>Contact Sports Warehouse</h3>
           <ul class="contact__items">
             <li>
               <div class="contact__item">
@@ -468,11 +496,11 @@
           </ul>
         </section>
       </div>
-      <footer class="site-footer">
-        <p>&copy; Copyright 2020 Sports Warehouse.</p>
-        <p>All rights reserved.</p>
-        <p>Website made by Awesomesauce Design.</p>
-      </footer>
     </div>
+    <footer class="site-footer">
+      <p>&copy; Copyright 2020 Sports Warehouse.</p>
+      <p>All rights reserved.</p>
+      <p>Website made by Awesomesauce Design.</p>
+    </footer>
   </body>
 </html>
