@@ -192,6 +192,7 @@ a {
 
   #menu {
     display: flex;
+    display: -ms-flexbox;
   }
 
   .menu-bar {
@@ -210,6 +211,7 @@ a {
   .menu__items {
     position: revert;
     display: flex;
+    display: -ms-flexbox;
     flex-direction: row;
     list-style: none;
     padding: 0;
