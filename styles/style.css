@@ -876,6 +876,11 @@ a {
     -ms-grid-columns: 1fr 1fr 1fr;
   }
 
+  .category-nav {
+    grid-column: 2;
+    -ms-grid-column: 2;
+  }
+
   .contact {
     grid-column: 3;
     -ms-grid-column: 3;
