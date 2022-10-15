@@ -872,6 +872,7 @@ a {
   .footer-nav-category-nav-contact__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
   }
 
   .contact {
