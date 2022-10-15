@@ -871,12 +871,14 @@ a {
 @media only screen and (min-width: 900px) {
   .footer-nav-category-nav-contact__container {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
   }
 
   .contact {
     grid-column: 3;
+    -ms-grid-column: 3;
   }
 
   .contact h2 {
@@ -886,6 +888,7 @@ a {
 @media only screen and (min-width: 1000px) {
   .footer-nav-category-nav-contact {
     display: flex;
+    display: -ms-flexbox;
     flex-direction: row;
     justify-content: center;
     background-color: #00aced;
